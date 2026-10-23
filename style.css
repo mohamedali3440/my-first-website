@@ -1,0 +1,144 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    color: #1565c0;
+    text-align: center;
+}
+
+h2 {
+    color: #00897b;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #1565c0;
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* Main content sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Make the navigation links responsive */
+nav a {
+    display: inline-block;
+    padding: 8px;
+}
+
+/* Improve the page on small screens */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+
+footer {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#home h1 {
+    font-size: 36px;
+}
+
+#home p {
+    text-align: center;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: #00897b;
+}
+
+button {
+    background-color: #00897b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #00695c;
+    transform: scale(1.05);
+}
