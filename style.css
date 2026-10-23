@@ -26,6 +26,10 @@ nav {
     padding: 18px;
     text-align: center;
     border-radius: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav a {
@@ -33,6 +37,8 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    display: inline-block;
+    padding: 8px;
 }
 
 nav a:hover {
@@ -40,63 +46,13 @@ nav a:hover {
 }
 
 section {
-    padding: 20px 0;
-}
-
-/* Main content sections */
-section {
     background-color: white;
     padding: 25px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-/* Make the navigation links responsive */
-nav a {
-    display: inline-block;
-    padding: 8px;
-}
-
-/* Improve the page on small screens */
-@media (max-width: 600px) {
-    body {
-        padding: 12px;
-    }
-
-    nav a {
-        margin: 5px;
-    }
-
-    section {
-        padding: 18px;
-    }
-}
-
-footer {
-    background-color: #1565c0;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 8px;
-}
-
-footer p {
-    font-size: 14px;
-    margin: 8px 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    scroll-margin-top: 80px;
 }
 
 #home h1 {
@@ -105,10 +61,6 @@ nav {
 
 #home p {
     text-align: center;
-}
-
-section {
-    scroll-margin-top: 80px;
 }
 
 .contact-button {
@@ -141,4 +93,36 @@ button {
 button:hover {
     background-color: #00695c;
     transform: scale(1.05);
+}
+
+footer {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    section {
+        padding: 18px;
+    }
 }
